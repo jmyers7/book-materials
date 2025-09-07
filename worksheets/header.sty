@@ -28,10 +28,11 @@
 
 % Create custom header and footers.
 \pagestyle{fancy}
-\newcommand{\hdr}[2]{
-\lhead{\textbf{#1 --- #2}}
+\newcommand{\hdr}[1]{
+\lhead{\textbf{#1}}
 \rhead{\textbf{Page {\thepage} of \pageref{LastPage}}}}
 \cfoot{}
+\setlength{\headsep}{25pt}
 
 % Enumerate with letters.
 \renewcommand{\theenumi}{\alph{enumi}}
